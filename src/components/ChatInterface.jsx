@@ -5,7 +5,7 @@ export default function ChatInterface({ session, onReset }) {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: `I've read **${session.filename}** (${session.pageCount} page${session.pageCount !== 1 ? 's' : ''}, ${session.chunkCount} sections). What would you like to know?`,
+      content: `I've read **${session.filename}**. What would you like to know?`,
     },
   ]);
   const [input,   setInput]   = useState('');
